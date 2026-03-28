@@ -1,0 +1,38 @@
+# Environment secrets
+.env
+
+# Local archive copies
+CSCI_5922_Final_Project_Template.zip
+Neural_Networks_Deep_Learning_Project_Report.zip
+
+# Overleaf / LaTeX source tree
+_unzipped/
+
+# LaTeX source files
+*.tex
+*.bib
+*.bst
+*.cls
+*.sty
+*.synctex.gz
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.toc
+*.xdv
+*.dvi
+*.ps
+*.pdf

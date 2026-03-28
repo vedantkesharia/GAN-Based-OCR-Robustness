@@ -1,0 +1,163 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "g": 15.585082289123536,
+      "d": 0.5844391689062118
+    },
+    {
+      "epoch": 2,
+      "g": 12.360615107727051,
+      "d": 0.5785148745059967
+    },
+    {
+      "epoch": 3,
+      "g": 12.35670459060669,
+      "d": 0.5488356903791428
+    },
+    {
+      "epoch": 4,
+      "g": 12.314303157043456,
+      "d": 0.5516401222467423
+    },
+    {
+      "epoch": 5,
+      "g": 12.420269313049316,
+      "d": 0.547095499753952
+    },
+    {
+      "epoch": 6,
+      "g": 12.366224319458007,
+      "d": 0.5324963673830032
+    },
+    {
+      "epoch": 7,
+      "g": 12.314949167633056,
+      "d": 0.536736543416977
+    },
+    {
+      "epoch": 8,
+      "g": 12.405107884216308,
+      "d": 0.5274402683496475
+    },
+    {
+      "epoch": 9,
+      "g": 12.32715771331787,
+      "d": 0.5372230063915253
+    },
+    {
+      "epoch": 10,
+      "g": 12.341909024047851,
+      "d": 0.5273395795464516
+    }
+  ],
+  "num_samples": 5000,
+  "evaluated_samples": 200,
+  "device": "cuda",
+  "eval_engines": [
+    "trocr",
+    "easyocr",
+    "tesseract",
+    "ocrspace"
+  ],
+  "attack_thresholds": {
+    "cer_margin": 0.02,
+    "wer_margin": 0.02
+  },
+  "train_degradation_seed": 1042,
+  "eval_degradation_seed": 2042,
+  "ocr_summary": [
+    {
+      "engine": "ocrspace",
+      "samples": 200,
+      "clean_accuracy": 0.0,
+      "baseline_accuracy": 0.0,
+      "generated_accuracy": 0.0,
+      "attack_success_rate": 0.13,
+      "clean_cer": 0.9020266949628231,
+      "baseline_cer": 0.9028722949675104,
+      "generated_cer": 0.9063426942964722,
+      "clean_wer": 0.9501993957839546,
+      "baseline_wer": 0.9515421135237311,
+      "generated_wer": 0.9516245637532402,
+      "generated_cer_delta": 0.0034703993289618607,
+      "generated_wer_delta": 8.245022950905512e-05,
+      "clean_accuracy_pct": 0.0,
+      "baseline_accuracy_pct": 0.0,
+      "generated_accuracy_pct": 0.0,
+      "attack_success_rate_pct": 13.0,
+      "generated_vs_baseline_accuracy_delta_pct": 0.0,
+      "generated_vs_baseline_cer_delta": 0.0034703993289617596,
+      "generated_vs_baseline_wer_delta": 8.24502295091456e-05
+    },
+    {
+      "engine": "easyocr",
+      "samples": 200,
+      "clean_accuracy": 0.005,
+      "baseline_accuracy": 0.005,
+      "generated_accuracy": 0.005,
+      "attack_success_rate": 0.385,
+      "clean_cer": 0.6995396722583316,
+      "baseline_cer": 0.7141413549760607,
+      "generated_cer": 0.7167270622673577,
+      "clean_wer": 0.9233718323309061,
+      "baseline_wer": 0.9308046425762163,
+      "generated_wer": 0.9313088399107913,
+      "generated_cer_delta": 0.0025857072912969805,
+      "generated_wer_delta": 0.0005041973345749079,
+      "clean_accuracy_pct": 0.5,
+      "baseline_accuracy_pct": 0.5,
+      "generated_accuracy_pct": 0.5,
+      "attack_success_rate_pct": 38.5,
+      "generated_vs_baseline_accuracy_delta_pct": 0.0,
+      "generated_vs_baseline_cer_delta": 0.0025857072912970347,
+      "generated_vs_baseline_wer_delta": 0.0005041973345749629
+    },
+    {
+      "engine": "trocr",
+      "samples": 200,
+      "clean_accuracy": 0.005,
+      "baseline_accuracy": 0.005,
+      "generated_accuracy": 0.005,
+      "attack_success_rate": 0.1,
+      "clean_cer": 0.9584217104699827,
+      "baseline_cer": 0.9607776846208762,
+      "generated_cer": 0.9632185870183692,
+      "clean_wer": 1.000762506284565,
+      "baseline_wer": 0.9932336601307189,
+      "generated_wer": 0.9992240447461036,
+      "generated_cer_delta": 0.00244090239749308,
+      "generated_wer_delta": 0.005990384615384615,
+      "clean_accuracy_pct": 0.5,
+      "baseline_accuracy_pct": 0.5,
+      "generated_accuracy_pct": 0.5,
+      "attack_success_rate_pct": 10.0,
+      "generated_vs_baseline_accuracy_delta_pct": 0.0,
+      "generated_vs_baseline_cer_delta": 0.00244090239749295,
+      "generated_vs_baseline_wer_delta": 0.005990384615384703
+    },
+    {
+      "engine": "tesseract",
+      "samples": 200,
+      "clean_accuracy": 0.0,
+      "baseline_accuracy": 0.0,
+      "generated_accuracy": 0.0,
+      "attack_success_rate": 0.16,
+      "clean_cer": 0.9696850815285362,
+      "baseline_cer": 0.9716363389124173,
+      "generated_cer": 0.9708900519006458,
+      "clean_wer": 0.9926482828606684,
+      "baseline_wer": 0.9994519346686306,
+      "generated_wer": 0.9946160714285714,
+      "generated_cer_delta": -0.0007462870117714271,
+      "generated_wer_delta": -0.00483586324005917,
+      "clean_accuracy_pct": 0.0,
+      "baseline_accuracy_pct": 0.0,
+      "generated_accuracy_pct": 0.0,
+      "attack_success_rate_pct": 16.0,
+      "generated_vs_baseline_accuracy_delta_pct": 0.0,
+      "generated_vs_baseline_cer_delta": -0.0007462870117714848,
+      "generated_vs_baseline_wer_delta": -0.004835863240059135
+    }
+  ]
+}
