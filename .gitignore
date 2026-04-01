@@ -1,5 +1,6 @@
 # Environment secrets
 .env
+.venv/
 
 # Local archive copies
 CSCI_5922_Final_Project_Template.zip
